@@ -34,3 +34,13 @@ plugins=(git)
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
+
+# remove google3 JDK /usr/local/buildtools/java/jdk/bin from PATH on gLucid
+export PATH=${PATH/\/usr\/local\/buildtools\/java\/jdk\/bin:/}
+
+# add ~/bin to path for repo
+export PATH=$PATH:$HOME/bin
+
+# CCACHE
+export USE_CCACHE=1
+export CCACHE_DIR=/scratch/ccache
