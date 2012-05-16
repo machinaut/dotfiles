@@ -3,7 +3,7 @@ call pathogen#infect()
 
 " Sytax Highlighting
 syntax on
-source local.vim
+source ~/.local.vim
 set background=dark
 set t_Co=256
 colorscheme solarized
