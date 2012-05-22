@@ -8,6 +8,9 @@ set background=dark
 set t_Co=256
 colorscheme solarized
 
+" Search Hilighting
+set hlsearch
+
 " Indenting
 set expandtab
 set shiftwidth=2
