@@ -38,7 +38,7 @@ source $ZSH/oh-my-zsh.sh
 source $HOME/.local.zsh
 
 # add ~/bin to path for repo
-export PATH=$PATH:$HOME/bin
+export PATH=$HOME/bin:$PATH
 
 # CCACHE
 export USE_CCACHE=1
