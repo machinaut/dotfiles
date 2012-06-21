@@ -46,7 +46,7 @@ export CCACHE_DIR=/scratch/ccache
 
 # Go (Golang.org)
 export GOROOT=$HOME/src/go
-export PATH=$PATH:$GOROOT/bin
+export PATH=$GOROOT/bin:$PATH
 
 # Node.js
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$HOME/src/node/lib
