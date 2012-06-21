@@ -1,3 +1,8 @@
+" Go (Golang.org)
+set rtp+=$GOROOT/misc/vim
+filetype plugin indent on
+syntax on
+
 " Start pathogen
 call pathogen#infect()
 
@@ -23,4 +28,3 @@ set smartindent
 set expandtab
 set shiftwidth=2
 set softtabstop=2
-
