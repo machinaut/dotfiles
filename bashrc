@@ -108,3 +108,7 @@ export PATH=$PATH:$HOME/bin
 # CCACHE
 export USE_CCACHE=1
 export CCACHE_DIR=/scratch/ccache
+
+# Go (Golang.org)
+export GOROOT=$HOME/src/go
+export PATH=$PATH:$GOROOT/bin

@@ -44,3 +44,15 @@ export PATH=$PATH:$HOME/bin
 # CCACHE
 export USE_CCACHE=1
 export CCACHE_DIR=/scratch/ccache
+
+# Go (Golang.org)
+export GOROOT=$HOME/src/go
+export PATH=$PATH:$GOROOT/bin
+
+# Node.js
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$HOME/src/node/lib
+export PATH=$PATH:$HOME/src/node/bin
+
+# Hop (TODO: get actual hop)
+alias cda="cd $HOME/code/android"
+alias cdl="cd $HOME/code/linux"
