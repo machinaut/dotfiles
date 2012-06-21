@@ -35,7 +35,7 @@ source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
 
-source local.zsh
+source $HOME/.local.zsh
 
 # add ~/bin to path for repo
 export PATH=$PATH:$HOME/bin
