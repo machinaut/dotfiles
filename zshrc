@@ -34,3 +34,14 @@ plugins=(git)
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
+
+# add ~/bin to path for repo
+export PATH=$PATH:$HOME/bin
+
+# Go (Golang.org)
+export GOROOT=$HOME/src/go
+export PATH=$PATH:$GOROOT/bin
+
+# Node.js
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$HOME/src/node/lib
+export PATH=$PATH:$HOME/src/node/bin
