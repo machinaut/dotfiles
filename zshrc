@@ -40,10 +40,6 @@ source $HOME/.local.zsh
 # add ~/bin to path for repo
 export PATH=$HOME/bin:$PATH
 
-# CCACHE
-export USE_CCACHE=1
-export CCACHE_DIR=/scratch/ccache
-
 # Go (Golang.org)
 export GOROOT=$HOME/src/go
 export PATH=$PATH:$GOROOT/bin
