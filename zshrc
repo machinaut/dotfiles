@@ -1,5 +1,5 @@
 # Path to your oh-my-zsh configuration.
-ZSH=$HOME/.oh-my-zsh
+ZSH=$CODE/oh-my-zsh
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
@@ -33,21 +33,5 @@ plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
 
-# Customize to your needs...
-
-source $HOME/.local.zsh
-
-# add ~/bin to path for repo
-export PATH=$HOME/bin:$PATH
-
-# Go (Golang.org)
-export GOROOT=$HOME/src/go
-export PATH=$GOROOT/bin:$PATH
-
-# Node.js
-export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$HOME/src/node/lib
-export PATH=$PATH:$HOME/src/node/bin
-
-# Hop (TODO: get actual hop)
-alias cda="cd $HOME/code/android"
-alias cdl="cd $HOME/code/linux"
+# machine-specific customization
+source $CODE/zshrc.local
