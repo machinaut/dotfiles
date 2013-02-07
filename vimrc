@@ -1,3 +1,9 @@
+" Local runtimepath
+set rtp+=$CODED/vim
+
+" Pathogen
+call pathogen#infect()
+
 " Searching
 set hlsearch
 set incsearch
@@ -18,14 +24,11 @@ set rtp+=$GOROOT/misc/vim
 filetype plugin indent on
 au FileType go setlocal noexpandtab tabstop=8 shiftwidth=8
 
-" Start pathogen
-call pathogen#infect()
-
 " Sytax Highlighting
 syntax on
-source ~/.local.vim
 set background=dark
 set t_Co=256
 "colorscheme solarized
-colorscheme darkblue
+colorscheme molokai
 
+" Machine-specific configuration goes in $VIM/plugins/local.vim

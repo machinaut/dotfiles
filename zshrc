@@ -34,4 +34,4 @@ plugins=(git)
 source $ZSH/oh-my-zsh.sh
 
 # machine-specific customization
-source $CODE/zshrc.local
+source $CODED/zshrc.local
