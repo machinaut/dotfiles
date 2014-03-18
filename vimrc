@@ -9,15 +9,19 @@ set hlsearch
 set incsearch
 set ignorecase smartcase
 
-" Searching
-set hlsearch
-set incsearch
-
 " Indenting
-set smartindent
+set autoindent
+"set smartindent
 set expandtab
-set shiftwidth=2
-set softtabstop=2
+set shiftwidth=4
+set softtabstop=4
+
+" C/C++ tweaks
+au FileType c,cpp setlocal comments-=:// comments+=f://
+
+" Line numbers
+set ruler
+set number
 
 " Go (Golang.org)
 set rtp+=$GOROOT/misc/vim
@@ -26,8 +30,6 @@ au FileType go setlocal noexpandtab tabstop=8 shiftwidth=8
 
 " Sytax Highlighting
 syntax on
-set ruler
-set number
 set background=dark
 set t_Co=256
 colorscheme molokai
