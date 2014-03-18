@@ -1,7 +1,11 @@
-# Zsh Envinronment setup
+# Zsh Environment setup
 
-# Base directory for organizing stuff
-export CODE=$HOME/code
+# Base directory for source
+if [[ $OSTYPE == *darwin* ]] ; then
+    export CODE=$HOME/Code
+else
+    export CODE=$HOME/code
+fi
 export CODED=$CODE/dotfiles
 
 # local bin
@@ -11,13 +15,8 @@ export PATH=$HOME/bin:$PATH
 export GOROOT=$HOME/code/go
 export PATH=$GOROOT/bin:$PATH
 
-# Linux kernel compile for android
-export ARCH=arm
-export SUBARCH=arm
-export CROSS_COMPILE=arm-eabi-
-
 # Vim
 export EDITOR=/usr/bin/vim
 
-# machine-specific customization stuff
+# machine-specific customization
 source $CODED/zshenv.local
