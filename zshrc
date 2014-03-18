@@ -1,8 +1,7 @@
 # machinaut's zsh configuration
 ZSH=$CODE/oh-my-zsh
 
-#ZSH_THEME="pygmalion"
-ZSH_THEME="random"
+ZSH_THEME="robbyrussell"
 
 COMPLETION_WAITING_DOTS="true"
 HIST_STAMPS="yyyy-mm-dd"
