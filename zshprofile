@@ -1,0 +1,2 @@
+# machine-specific customization
+source $CODED/zshprofile.local
