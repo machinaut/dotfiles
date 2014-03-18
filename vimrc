@@ -26,9 +26,15 @@ au FileType go setlocal noexpandtab tabstop=8 shiftwidth=8
 
 " Sytax Highlighting
 syntax on
+set ruler
+set number
 set background=dark
 set t_Co=256
-"colorscheme solarized
 colorscheme molokai
 
-" Machine-specific configuration goes in $VIM/plugins/local.vim
+" Hilight column 80
+set textwidth=80
+set colorcolumn=+1
+
+
+" Machine-specific configuration goes in $CODED/vim/plugins/local.vim
