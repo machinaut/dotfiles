@@ -22,3 +22,7 @@ alias ndon="find . -type f -iname '*.h' -or -iname '*.cpp' -exec sed -i 's/^\/\/
 alias ndoff="find . -type f -iname '*.h' -or -iname '*.cpp' -exec sed -i 's/^#define *LOG_NDEBUG *0/\/\/#define LOG_NDEBUG 0/' '{}' \;"
 
 for i in $(echo "m mm mmm ma mma mmma"); do alias $i="pez $i"; done
+
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+
+export PYTHONPATH=$PYTHONPATH:/usr/local/Cellar/nanopb-generator/0.2.7/libexec/
