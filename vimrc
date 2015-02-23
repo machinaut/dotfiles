@@ -17,7 +17,7 @@ set shiftwidth=4
 set softtabstop=4
 
 " C/C++ tweaks
-au FileType c,cpp setlocal comments-=:// comments+=f://
+au FileType c,cpp setlocal comments-=:// comments+=f:// shiftwidth=2 softtabstop=2
 
 " Line numbers
 set ruler

@@ -2,6 +2,7 @@
 ZSH=$CODE/oh-my-zsh
 
 ZSH_THEME="robbyrussell"
+if [[ "i686" == $(uname -p) ]] ; then ZSH_THEME="simple" ; fi
 
 COMPLETION_WAITING_DOTS="true"
 HIST_STAMPS="yyyy-mm-dd"
