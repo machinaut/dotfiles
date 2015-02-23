@@ -14,6 +14,9 @@ source $ZSH/oh-my-zsh.sh
 # Git aliases
 alias gash="git stash"
 
+# Laptop aliases
+alias mahpowah="upower -i $(upower -e | grep BAT)"
+
 # machine-specific customization
 source $CODED/zshrc.local
 
