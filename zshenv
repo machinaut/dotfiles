@@ -10,6 +10,7 @@ export CODED=$CODE/dotfiles
 
 # local bin
 export PATH=$HOME/bin:$PATH
+export PATH=$PATH:$CODE/bin
 
 # Go (Golang.org)
 export GOROOT=$HOME/code/go
