@@ -2,3 +2,4 @@ zshenv.local
 zshprofile.local
 zshrc.local
 vim/plugin/local.vim
+vim/.netrwhist

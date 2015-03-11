@@ -18,6 +18,7 @@ alias gash="git stash"
 alias mahpowah="upower -i $(upower -e | grep BAT)"
 # see options list here: vim /usr/share/X11/xkb/rules/base.lst
 alias nocaps="setxkbmap -option caps:escape"
+nocaps
 
 # machine-specific customization
 source $CODED/zshrc.local
