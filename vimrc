@@ -4,6 +4,9 @@ set rtp+=$CODED/vim
 " Pathogen
 call pathogen#infect()
 
+" Use folds but start with everything open
+:set foldlevelstart=99
+
 " Searching
 set hlsearch
 set incsearch
