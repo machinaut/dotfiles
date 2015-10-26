@@ -2,7 +2,10 @@
 ZSH=$CODE/oh-my-zsh
 
 ZSH_THEME="robbyrussell"
-if [[ "i686" == $(uname -p) ]] ; then ZSH_THEME="simple" ; fi
+if [[ "i686" == $(uname -p) ]] ; then
+    ZSH_THEME="simple"
+    PATH=$HOME/bin32:$PATH
+fi
 
 COMPLETION_WAITING_DOTS="true"
 HIST_STAMPS="yyyy-mm-dd"
@@ -33,3 +36,6 @@ for i in $(echo "m mm mmm ma mma mmma"); do alias $i="pez $i"; done
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 
 export PYTHONPATH=$PYTHONPATH:/usr/local/Cellar/nanopb-generator/0.2.7/libexec/
+
+export PATH="$PATH:$HOME/torch/install/bin"
+. $HOME/torch/install/bin/torch-activate

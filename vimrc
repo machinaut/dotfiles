@@ -37,6 +37,9 @@ set t_Co=16
 set background=dark
 colorscheme solarized
 
+" Oh Geez JSON
+autocmd BufNewFile,BufRead *.json set ft=javascript
+
 " Hilight column 80
 set textwidth=80
 set colorcolumn=+1

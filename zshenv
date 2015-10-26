@@ -21,3 +21,6 @@ export EDITOR=/usr/bin/vim
 
 # machine-specific customization
 source $CODED/zshenv.local
+
+# Fancy utf-8 pants
+export LANG=en_US.UTF-8
