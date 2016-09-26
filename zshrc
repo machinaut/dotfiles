@@ -49,7 +49,7 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+plugins=(git docker rvm)
 
 # User configuration
 
@@ -85,3 +85,8 @@ source $ZSH/oh-my-zsh.sh
 
 # machine-specific customization
 source $CODED/zshrc.local
+
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+
+# added by travis gem
+[ -f /Users/a/.travis/travis.sh ] && source /Users/a/.travis/travis.sh
