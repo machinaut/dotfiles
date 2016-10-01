@@ -1,5 +1,8 @@
 # Zsh Environment setup
 
+# HOMBINE
+export PATH=$PATH:$HOME/bin
+
 # Base directory for source code
 export CODE=$HOME/code
 export CODED=$CODE/dotfiles
