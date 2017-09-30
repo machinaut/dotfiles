@@ -1,7 +1,5 @@
 # Zsh Environment setup
 
-#export PYTHONPATH_OLD=$PYTHONPATH
-
 # HOMBINE
 export PATH=$PATH:$HOME/bin
 
@@ -11,6 +9,11 @@ export CODED=$CODE/dotfiles
 
 # machine-specific customization
 source $CODED/zshenv.local
+
+# Golang stuff
+export GOROOT=$CODE/go
+export GOPATH=$HOME/go
+export PATH=$GOROOT/bin:$GOPATH/bin:$PATH
 
 # Fancy utf-8 pants
 export LANG=en_US.UTF-8
@@ -38,4 +41,5 @@ export PATH=$PATH:$NDK_DIR
 export PATH="/usr/local/sbin:$PATH"
 
 # Tinkerbell config
-export TINKERBELL_CODE_DIR=$CODE/tinker_code
+# export TINKERBELL_CODE_DIR=$CODE/tinker
+export TINKERBELL_CODE_DIR=$CODE/tinker_code/gpr
