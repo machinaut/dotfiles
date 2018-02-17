@@ -13,7 +13,7 @@ source $CODED/zshenv.local
 # Golang stuff
 export GOROOT=$CODE/go
 export GOPATH=$HOME/go
-export PATH=$GOROOT/bin:$GOPATH/bin:$PATH
+export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
 
 # Fancy utf-8 pants
 export LANG=en_US.UTF-8
@@ -38,8 +38,19 @@ export PATH=$PATH:$NDK_DIR
 # export PATH=$PATH:$HOME/.mujoco/mjpro140/bin
 
 # Homebrew sbin path
-export PATH="/usr/local/sbin:$PATH"
+export PATH=$PATH:/usr/local/sbin
 
 # Tinkerbell config
 # export TINKERBELL_CODE_DIR=$CODE/tinker
 export TINKERBELL_CODE_DIR=$CODE/tinker_code/gpr
+
+# z (command to jump around directories)
+source $CODE/z/z.sh
+
+# Anaconda
+export PATH=$PATH:$HOME/anaconda3/bin
+
+# Pyenv Path
+export PYENV_VERSION=3.6.4
+export PATH=$PATH:/usr/local/bin
+# Adding pyenv shims to the path moved to the end of "zshrc"

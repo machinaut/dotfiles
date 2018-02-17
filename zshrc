@@ -91,4 +91,6 @@ test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell
 # added by travis gem
 [ -f /Users/a/.travis/travis.sh ] && source /Users/a/.travis/travis.sh
 
-
+# Pyenv path
+# Putting this here means oh-my-zsh doesn't mess up the path afterwards
+export PATH=$(pyenv root)/shims:$PATH
